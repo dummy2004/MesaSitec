@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{7832BB75-4D1E-4120-B5CF-CA63017085BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7CF9C78A-652A-4D0F-B2B8-7B538F36EAC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Aplicacion", "backend\src\Aplicacion\MesaSitec.Aplicacion.csproj", "{F9D3EC34-03DA-4D41-9AEF-78A9ACF7A042}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Api", "backend\src\Api\MesaSitec.Api.csproj", "{E75D1E1B-4233-4580-B3C7-38AF8A0FF513}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Dominio", "backend\src\Dominio\MesaSitec.Dominio.csproj", "{B328824B-A768-4322-A4CA-8F074838ED87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Infraestructura", "backend\src\Infraestructura\MesaSitec.Infraestructura.csproj", "{6361EB5B-37B1-495D-99AB-8CC6880A8E9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MesaSitec.Tests", "backend\tests\MesaSitec.Tests.csproj", "{78D887A8-6F41-460B-ACFF-E6C981BCEC2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9D3EC34-03DA-4D41-9AEF-78A9ACF7A042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9D3EC34-03DA-4D41-9AEF-78A9ACF7A042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9D3EC34-03DA-4D41-9AEF-78A9ACF7A042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9D3EC34-03DA-4D41-9AEF-78A9ACF7A042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E75D1E1B-4233-4580-B3C7-38AF8A0FF513}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E75D1E1B-4233-4580-B3C7-38AF8A0FF513}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E75D1E1B-4233-4580-B3C7-38AF8A0FF513}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E75D1E1B-4233-4580-B3C7-38AF8A0FF513}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B328824B-A768-4322-A4CA-8F074838ED87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B328824B-A768-4322-A4CA-8F074838ED87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B328824B-A768-4322-A4CA-8F074838ED87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B328824B-A768-4322-A4CA-8F074838ED87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6361EB5B-37B1-495D-99AB-8CC6880A8E9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6361EB5B-37B1-495D-99AB-8CC6880A8E9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6361EB5B-37B1-495D-99AB-8CC6880A8E9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6361EB5B-37B1-495D-99AB-8CC6880A8E9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D887A8-6F41-460B-ACFF-E6C981BCEC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D887A8-6F41-460B-ACFF-E6C981BCEC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D887A8-6F41-460B-ACFF-E6C981BCEC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D887A8-6F41-460B-ACFF-E6C981BCEC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7CF9C78A-652A-4D0F-B2B8-7B538F36EAC3} = {7832BB75-4D1E-4120-B5CF-CA63017085BB}
+		{F9D3EC34-03DA-4D41-9AEF-78A9ACF7A042} = {7CF9C78A-652A-4D0F-B2B8-7B538F36EAC3}
+		{E75D1E1B-4233-4580-B3C7-38AF8A0FF513} = {7CF9C78A-652A-4D0F-B2B8-7B538F36EAC3}
+		{B328824B-A768-4322-A4CA-8F074838ED87} = {7CF9C78A-652A-4D0F-B2B8-7B538F36EAC3}
+		{6361EB5B-37B1-495D-99AB-8CC6880A8E9F} = {7CF9C78A-652A-4D0F-B2B8-7B538F36EAC3}
+		{78D887A8-6F41-460B-ACFF-E6C981BCEC2A} = {7832BB75-4D1E-4120-B5CF-CA63017085BB}
+	EndGlobalSection
+EndGlobal
