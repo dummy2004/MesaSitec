@@ -39,3 +39,26 @@ public class RecursoNoEncontradoException : DominioException
     public RecursoNoEncontradoException(string mensaje)
         : base("RECURSO_NO_ENCONTRADO", mensaje) { }
 }
+
+public class NoAutenticadoException : DominioException
+{
+    public NoAutenticadoException(string mensaje)
+        : base("NO_AUTENTICADO", mensaje) { }
+}
+
+public class ParametroInvalidoException : DominioException
+{
+    public ParametroInvalidoException(string mensaje)
+        : base("PARAMETRO_INVALIDO", mensaje) { }
+}
+
+public class ValidacionException : DominioException
+{
+    public Dictionary<string, string[]> Errores { get; }
+
+    public ValidacionException(string campo, string mensaje)
+        : base("VALIDACION", "Error de validación de campos.")
+    {
+        Errores = new Dictionary<string, string[]> { [campo] = new[] { mensaje } };
+    }
+}
