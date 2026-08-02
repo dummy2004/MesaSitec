@@ -144,9 +144,10 @@ public class SolicitudesController(MesaSitecDbContext db, ISlaCalculator slaCalc
         var fechaLimite = slaCalculator.Calcular(fechaCreacion, categoria.SlaHoras, prioridad);
 
         var anioActual = fechaCreacion.Year;
+        var prefijo = $"SOL-{anioActual}-";
         var correlativo = await db.Solicitudes
-            .Where(s => s.TenantId == tenantId && s.FechaCreacion.Year == anioActual)
-            .CountAsync() + 1;
+        .Where(s => s.TenantId == tenantId && s.Codigo.StartsWith(prefijo))
+        .CountAsync() + 1;
 
         var solicitud = new Solicitud
         {
